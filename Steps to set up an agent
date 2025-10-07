@@ -14,7 +14,14 @@ import os
 from openai import OpenAI
 
 Set environment variable
-In terminal: export OPENAI_API_KEY='your-api-key-here'
+In terminal: 
+
+Mac
+$env:OPENAI_API_KEY='your-api-key-here'
+
+Windows
+setx OPENAI_API_KEY 'your-api-key-here'
+
 client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY"))
 
 📝 Step 2: Installing Required Packages
